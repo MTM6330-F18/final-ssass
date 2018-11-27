@@ -6,305 +6,350 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Courses - Interactive Media Design</title>
     <link href="../css/min/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
     <header>
         <img src="../img/logo.svg">
         <h1></h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html"> Overview</a></li>
-                <li><a href="./index.html">Courses</a></li>
-                <li><a href="../professors/">Professors</a></li>
-                <li><a href="../schedule.html">Schedule</a></li>
+        <nav class="navbar navbar-expand-sm bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Overview</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="../professors/" class="nav-link">Professors</a></li>
+                <li class="nav-item"><a href="../schedule.html" class="nav-link">Schedule</a></li>
             </ul>
         </nav>
     </header>
-    
-    <div class="first-term term">
-        <h3>Level 01</h3>
-        <ul>
-            <li>
-                Design Thinking 
-                <div class="hidden">
-                    <p>Design Thinking</p>
-                    <p>DSN2100M</p>
-                    <p>XX.0 hrs</p>
+    <div id="courses">
+        <div class="first-term term">
+            <h3>Level 01</h3>
+            <ul>
+                <li class="course">
+                    Design Thinking
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Design Thinking</p>
+                        <p>DSN2100M</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div> 
-            </li>
-            <li>
-                Introduction to DSLR
-                <div class="hidden">
-                    <p>Introduction to DSLR</p>
-                    <p>MTM6100</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div> 
+                </li>
+                <li class="course">
+                    Introduction to DSLR
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Introduction to DSLR</p>
+                        <p>MTM6100</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Responsive Web Design
-                <div class="hidden">
-                    <p><a href="./mtm6130.html">Responsive Web Design</a></p>
-                    <p>MTM6130</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Responsive Web Design
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p><a href="./mtm6130.html">Responsive Web Design</a></p>
+                        <p>MTM6130</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Digital Graphics
-                <div class="hidden">
-                    <p>Digital Graphics</p>
-                    <p>MTM6160</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Digital Graphics
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Digital Graphics</p>
+                        <p>MTM6160</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Design Foundations
-                <div class="hidden">
-                    <p>Design Foundations</p>
-                    <p>MTM6161</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Design Foundations
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p><a href="./mtm6161.html">Design Foundations</a></p>
+                        <p>MTM6161</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
 
-        </ul>
-    </div>
+            </ul>
+        </div>
 
-    <div class="second-term term">
-        <h3>Level 02</h3>
-        <ul>
-            <li>
-                Communications I
-                <div class="hidden">
-                    <p>Communications I</p>
-                    <p>ENL1813M</p>
-                    <p>XX.0 hrs</p>
+        <div class="second-term term">
+            <h3>Level 02</h3>
+            <ul>
+                <li class="course">
+                    Communications I
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Communications I</p>
+                        <p>ENL1813M</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Video Foundations
-                <div class="hidden">
-                    <p>Video Foundations</p>
-                    <p>MTM6200</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Video Foundations
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Video Foundations</p>
+                        <p>MTM6200</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Client-Side Web Development
-                <div class="hidden">
-                    <p>Client-Side Web Development</p>
-                    <p>MTM6230</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Client-Side Web Development
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p><a href="./mtm6230.html">Client-Side Web Development</a></p>
+                        <p>MTM6230</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Content Management Systems I
-                <div class="hidden">
-                    <p>Content Management Systems I</p>
-                    <p>MTM6231</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Content Management Systems I
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Content Management Systems I</p>
+                        <p>MTM6231</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                User Experience Design
-                <div class="hidden">
-                    <p><a href="./mtm6260.html">User Experience Design</a></p>
-                    <p>MTM6260</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    User Experience Design
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p><a href="./mtm6260.html">User Experience Design</a></p>
+                        <p>MTM6260</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                General Education Elective
-                <div class="hidden">
-                    <p>General Education Elective</p>
-                    <p>GED6149</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    General Education Elective
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>General Education Elective</p>
+                        <p>GED6149</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-        </ul>
-    </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-    <div class="third-term term">
-        <h3>Level 03</h3>
-        <ul>
-            <li>
-                Motion Graphics
-                <div class="hidden">
-                    <p>Motion Graphics</p>
-                    <p>MTM6300</p>
-                    <p>XX.0 hrs</p>
+        <div class="third-term term">
+            <h3>Level 03</h3>
+            <ul>
+                <li class="course">
+                    Motion Graphics
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Motion Graphics</p>
+                        <p>MTM6300</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Web Production
-                <div class="hidden">
-                    <p>Web Production</p>
-                    <p>MTM6330</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Web Production
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Web Production</p>
+                        <p>MTM6330</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Server-Side Web Development
-                <div class="hidden">
-                    <p><a href="./mtm6331.html">Server-Side Web Development</a></p>
-                    <p>MTM6331</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Server-Side Web Development
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p><a href="./mtm6331.html">Server-Side Web Development</a></p>
+                        <p>MTM6331</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Applied Projects I
-                <div class="hidden">
-                    <p>Applied Projects I</p>
-                    <p>MTM6360</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Applied Projects I
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Applied Projects I</p>
+                        <p>MTM6360</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Project Management Skills
-                <div class="hidden">
-                    <p>Project Management Skills</p>
-                    <p>MTM6361</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Project Management Skills
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Project Management Skills</p>
+                        <p>MTM6361</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                General Education Elective
-                <div class="hidden">
-                    <p>General Education Elective</p>
-                    <p>GED6149</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    General Education Elective
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>General Education Elective</p>
+                        <p>GED6149</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-        </ul>
-    </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-    <div class="optional-term term">
-        <h3>Optional Co-op Term</h3>
-        <ul>
-            <li>
-                Co-operative Work Term
-                <div class="hidden">
-                    <p>Co-operative Work Term</p>
-                    <p>MTM6370</p>
-                    <p>XX.0 hrs</p>
+        <div class="optional-term term">
+            <h3>Optional Co-op Term</h3>
+            <ul>
+                <li class="course">
+                    Co-operative Work Term
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Co-operative Work Term</p>
+                        <p>MTM6370</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-        </ul>
-    </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-    <div class="fourth-term term">
-        <h3>Level 04</h3>
-        <ul>
-            <li>
-                Professional Communication for Interactive Media Design
-                <div class="hidden">
-                    <p>Professional Communication for Interactive Media Design</p>
-                    <p>ENL6007</p>
-                    <p>XX.0 hrs</p>
+        <div class="fourth-term term">
+            <h3>Level 04</h3>
+            <ul>
+                <li class="course">
+                    Professional Communication for Interactive Media Design
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Professional Communication for Interactive Media Design</p>
+                        <p>ENL6007</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Applied Projects II
-                <div class="hidden">
-                    <p>Applied Projects II</p>
-                    <p>MTM6460</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Applied Projects II
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Applied Projects II</p>
+                        <p>MTM6460</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Digital Publishing
-                <div class="hidden">
-                    <p>Digital Publishing</p>
-                    <p>MTM6461</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Digital Publishing
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Digital Publishing</p>
+                        <p>MTM6461</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-        </ul>
-        Choose two of:
-        <ul>
-            <li>
-                Media Production
-                <div class="hidden">
-                    <p>Digital Publishing</p>
-                    <p>MTM6400</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+            </ul>
+            <p>Choose two of:</p>
+            <ul>
+                <li class="course">
+                    Media Production
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Digital Publishing</p>
+                        <p>MTM6400</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Web Video Production
-                <div class="hidden">
-                    <p>Web Video Production</p>
-                    <p>MTM6401</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Web Video Production
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Web Video Production</p>
+                        <p>MTM6401</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Web Applications
-                <div class="hidden">
-                    <p>Web Applications</p>
-                    <p>MTM6430</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Web Applications
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Web Applications</p>
+                        <p>MTM6430</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-            <li>
-                Content Management Systems II
-                <div class="hidden">
-                    <p>Content Management Systems II</p>
-                    <p>MTM6431</p>
-                    <p>XX.0 hrs</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+                <li class="course">
+                    Content Management Systems II
+                    <div class="hidden">
+                        <div class="close">x</div>
+                        <p>Content Management Systems II</p>
+                        <p>MTM6431</p>
+                        <p>XX.0 hrs</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
-                </div>
-            </li>
-        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et iste quod aperiam, incidunt nesciunt, commodi veniam vel facere similique fuga ratione! Assumenda veritatis unde inventore blanditiis consectetur aliquid quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptates quisquam, asperiores impedit sint quia animi quo corporis doloremque. Ipsa voluptas impedit velit, sunt nobis ea placeat temporibus tempore expedita.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
     
     <script src="../js/index.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+
+            $('#courses').on('click', function (e) {
+                if (e.target.classList.contains('course')) {
+                    $(e.target.firstElementChild).removeClass("hidden");
+                    //$("div.first()").addClass("selected");
+                }
+            });
+            
+            $('#courses').on('click', function (e) {
+                if (e.target.classList.contains('close')) {
+                    $(e.target.parentElement).addClass("hidden");
+                    //$("div.first()").addClass("selected");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
