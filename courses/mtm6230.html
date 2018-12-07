@@ -11,21 +11,29 @@
     <header>
       <img src="../img/logo.svg" />
       <h1>MTM6230 Client-Side Web Development</h1>
-      <nav class="navbar navbar-expand-sm bg-light">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="../index.html" class="nav-link">Overview</a>
-          </li>
-          <li class="nav-item">
-            <a href="../courses/" class="nav-link">Courses</a>
-          </li>
-          <li class="nav-item">
-            <a href="../professors/" class="nav-link">Professors</a>
-          </li>
-          <li class="nav-item">
-            <a href="../schedule.html" class="nav-link">Schedule</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="../index.html"
+              >Overview <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link active" href="../courses/">Courses</a>
+            <a class="nav-item nav-link" href="../professors/">Professors</a>
+            <a class="nav-item nav-link" href="../schedule.html">Schedule</a>
+          </div>
+        </div>
       </nav>
     </header>
     <div class="container">
@@ -38,7 +46,9 @@
         on and put into practice, and students are introduced to core coding
         concepts including functions, conditional statements and loops.
       </p>
-      <p><a href="mtm6130.html">MTM6130</a> is a prerequisite for this course.</p>
+      <p>
+        <a href="mtm6130.html">MTM6130</a> is a prerequisite for this course.
+      </p>
       <p>
         Example assignments include building a text-based development-console
         game, as well as a flash card memory game utilizing JavaScript and CSS

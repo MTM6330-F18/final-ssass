@@ -1,464 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Schedules - Interactive Media Design</title>
-    <link href="./css/min/styles.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+    <link href="./css/min/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
     <header>
-        <img src="./img/logo.svg">
-        <h1>Schedules</h1>
-        <nav class="navbar navbar-expand-sm bg-light">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="./index.html" class="nav-link">Overview</a></li>
-                <li class="nav-item"><a href="./courses/" class="nav-link">Courses</a></li>
-                <li class="nav-item"><a href="./professors/" class="nav-link">Professors</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Schedule</a></li>
-            </ul>
-        </nav>
+      <img src="./img/logo.svg" />
+      <h1>Schedules</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="./index.html"
+              >Overview <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="./courses/">Courses</a>
+            <a class="nav-item nav-link" href="./professors/">Professors</a>
+            <a class="nav-item nav-link active" href="./schedule.html"
+              >Schedule</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
     <div class="container">
-        <p>Level One</p>
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#level-1-section-1">Section 1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#level-1-section-2">Section 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#level-1-section-3">Section 3</a>
-            </li>
-        </ul>
+      <p>Level One</p>
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#level-1-section-1"
+            >Section 1</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#level-1-section-2"
+            >Section 2</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#level-1-section-3"
+            >Section 3</a
+          >
+        </li>
+      </ul>
 
-        <div class="level-one tab-content">
-            <div id="level-1-section-1" class="container tab-pane active">
-                <div class="d-md-flex justify-content-between">
-                    <div class="day">
-                        <p>Monday</p>
-                        <div class="slot">
-                            <p>4:00pm - 8:00pm</p>
-                            <p>
-                                <a href="courses/mtm6161.html">MTM6161 Design Foundations</a><br>
-                                Room P216B<br>
-                                <a href="professors/tremblk3.html">Katie Tremblay</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Tuesday</p>
-                        <div class="slot">
-                            <p>12:00pm - 3:00pm</p>
-                            <p>
-                                MTM6100 Introduction to DSLR<br>
-                                Room T334<br>
-                                Andrew Balfour
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>3:00pm - 5:00pm</p>
-                            <p>
-                                <a href="courses/mtm6130.html">MTM6130 Responsive Web Design</a><br>
-                                Room B164<br>
-                                Amel Dedic
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Wednesday</p>
-                        <div class="slot">
-                            <p>11:00am - 1:00pm</p>
-                            <p>
-                                MTM6160 Digital Graphics<br>
-                                Room B159<br>
-                                Michel Lacroix
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Thursday</p>
-                        <div class="slot">
-                            <p>12:00pm - 2:00pm</p>
-                            <p>
-                                <a href="courses/mtm6130.html">MTM6130 Responsive Web Design</a><br>
-                                Room B159<br>
-                                Amel Dedic
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>2:00pm - 4:00pm</p>
-                            <p>
-                                MTM6160 Digital Graphics<br>
-                                Room B370<br>
-                                Michel Lacroix
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <div class="level-one tab-content">
+        <div id="level-1-section-1" class="container tab-pane active">
+          <div class="d-md-flex justify-content-between">
+            <div class="day">
+              <p>Monday</p>
+              <div class="slot">
+                <p>4:00pm - 8:00pm</p>
+                <p>
+                  <a href="courses/mtm6161.html">MTM6161 Design Foundations</a
+                  ><br />
+                  Room P216B<br />
+                  <a href="professors/tremblk3.html">Katie Tremblay</a>
+                </p>
+              </div>
             </div>
 
-            <div id="level-1-section-2" class="container tab-pane fade">
-                <div class=" d-md-flex justify-content-between">
-                    <div class="day">
-                        <p>Tuesday</p>
-                        <div class="slot">
-                            <p>8:30am - 10:30am</p>
-                            <p>
-                                MTM6160 Digital Graphics<br>
-                                Room T126<br>
-                                Michel Lacroix
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Wednesday</p>
-                        <div class="slot">
-                            <p>8:00am - 12:00pm</p>
-                            <p>
-                                <a href="courses/mtm6161.html">MTM6161 Design Foundations</a><br>
-                                Room B364<br>
-                                <a href="professors/tremblk3.html">Katie Tremblay</a>
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>1:30pm - 3:30pm</p>
-                            <p>
-                                <a href="courses/mtm6130.html">MTM6130 Responsive Web Design</a><br>
-                                Room P303<br>
-                                Amel Dedic
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Thursday</p>
-                        <div class="slot">
-                            <p>9:00am - 11:00am</p>
-                            <p>
-                                <a href="courses/mtm6130.html">MTM6130 Responsive Web Design</a><br>
-                                Room P214<br>
-                                Amel Dedic
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Friday</p>
-                        <div class="slot">
-                            <p>9:00am - 11:00am</p>
-                            <p>
-                                MTM6160 Digital Graphics<br>
-                                Room B165<br>
-                                Michel Lacroix
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>12:00pm - 3:00pm</p>
-                            <p>
-                                MTM6100 Introduction to DSLR<br>
-                                Room B364<br>
-                                <a href="professors/sharmaa.html">Abhay Sharma</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="day">
+              <p>Tuesday</p>
+              <div class="slot">
+                <p>12:00pm - 3:00pm</p>
+                <p>
+                  MTM6100 Introduction to DSLR<br />
+                  Room T334<br />
+                  Andrew Balfour
+                </p>
+              </div>
+              <div class="slot">
+                <p>3:00pm - 5:00pm</p>
+                <p>
+                  <a href="courses/mtm6130.html"
+                    >MTM6130 Responsive Web Design</a
+                  ><br />
+                  Room B164<br />
+                  Amel Dedic
+                </p>
+              </div>
             </div>
 
-            <div id="level-1-section-3" class="container tab-pane fade">
-                <div class="d-md-flex justify-content-between">
-                    <div class="day">
-                        <p>Monday</p>
-                        <div class="slot">
-                            <p>2:00pm - 4:00pm</p>
-                            <p>
-                                <a href="courses/mtm6130.html">MTM6130 Responsive Web Design</a><br>
-                                Room A136C<br>
-                                <a href="professors/sharmaa.html">Abhay Sharma</a>
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>6:00pm - 10:00pm</p>
-                            <p>
-                                <a href="courses/mtm6161.html">MTM6161 Design Foundations</a><br>
-                                Room A136C<br>
-                                John Willman
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Wednesday</p>
-                        <div class="slot">
-                            <p>10:00am - 1:00pm</p>
-                            <p>
-                                MTM6100 Introduction to DSLR<br>
-                                Room T229<br>
-                                Andrew Balfour
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>2:00pm - 4:00pm</p>
-                            <p>
-                                MTM6160 Digital Graphics<br>
-                                Room T304<br>
-                                Michel Lacroix
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Thursday</p>
-                        <div class="slot">
-                            <p>3:30pm - 5:30pm</p>
-                            <p>
-                                <a href="courses/mtm6130.html">MTM6130 Responsive Web Design</a><br>
-                                Room B166<br>
-                                <a href="professors/sharmaa.html">Abhay Sharma</a>
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>5:30pm - 7:30pm</p>
-                            <p>
-                                MTM6160 Digital Graphics<br>
-                                Room A140A<br>
-                                Michel Lacroix
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="day">
+              <p>Wednesday</p>
+              <div class="slot">
+                <p>11:00am - 1:00pm</p>
+                <p>
+                  MTM6160 Digital Graphics<br />
+                  Room B159<br />
+                  Michel Lacroix
+                </p>
+              </div>
             </div>
+
+            <div class="day">
+              <p>Thursday</p>
+              <div class="slot">
+                <p>12:00pm - 2:00pm</p>
+                <p>
+                  <a href="courses/mtm6130.html"
+                    >MTM6130 Responsive Web Design</a
+                  ><br />
+                  Room B159<br />
+                  Amel Dedic
+                </p>
+              </div>
+              <div class="slot">
+                <p>2:00pm - 4:00pm</p>
+                <p>
+                  MTM6160 Digital Graphics<br />
+                  Room B370<br />
+                  Michel Lacroix
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <p>Level Three</p>
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#level-3-section-1">Section 1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#level-3-section-2">Section 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#level-3-section-3">Section 3</a>
-            </li>
-        </ul>
-
-        <div class="level-three tab-content">
-            <div id="level-3-section-1" class="container tab-pane active">
-                <div class="d-md-flex justify-content-between">
-                    <div class="day">
-                        <p>Monday</p>
-                        <div class="slot">
-                            <p>8:00am - 10:00am</p>
-                            <p>
-                                MTM6361 Project Management Skills<br>
-                                Room T229<br>
-                                John Kozodoj
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Tuesday</p>
-                        <div class="slot">
-                            <p>8:30am - 12:30pm</p>
-                            <p>
-                                MTM6360 Applied Projects I<br>
-                                Room T229<br>
-                                John Kozodoj, Adam Jarvis
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Wednesday</p>
-                        <div class="slot">
-                            <p>9:00am - 12:00pm</p>
-                            <p>
-                                MTM6300 Motion Graphics<br>
-                                Room T308<br>
-                                Hussein Tayrani
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>1:00pm - 4:00pm</p>
-                            <p>
-                                MTM6330 Web Production<br>
-                                Room T232<br>
-                                Robert McKenney
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Thursday</p>
-                        <div class="slot">
-                            <p>8:30am - 10:30am</p>
-                            <p>
-                                MTM6360 Applied Projects I<br>
-                                Room T229<br>
-                                John Kozodoj, Adam Jarvis
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Friday</p>
-                        <div class="slot">
-                            <p>8:00am - 11:00am</p>
-                            <p>
-                                MTM6331 Server-side Web Development<br>
-                                Room T232<br>
-                                <a href="professors/eisenbm.html">Michael Alan Eisenbraun</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div id="level-1-section-2" class="container tab-pane fade">
+          <div class=" d-md-flex justify-content-between">
+            <div class="day">
+              <p>Tuesday</p>
+              <div class="slot">
+                <p>8:30am - 10:30am</p>
+                <p>
+                  MTM6160 Digital Graphics<br />
+                  Room T126<br />
+                  Michel Lacroix
+                </p>
+              </div>
             </div>
 
-            <div id="level-3-section-2" class="container tab-pane fade">
-                <div class="section-two d-md-flex justify-content-between">
-                    <div class="day">
-                        <p>Monday</p>
-                        <div class="slot">
-                            <p>8:00am - 11:00am</p>
-                            <p>
-                                MTM6331 Server-side Web Development<br>
-                                Room T232<br>
-                                <a href="professors/eisenbm.html">Michael Alan Eisenbraun</a>
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>2:00pm - 4:00pm</p>
-                            <p>
-                                MTM6361 Project Management Skills<br>
-                                Room N202<br>
-                                Adam Jarvis
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Tuesday</p>
-                        <div class="slot">
-                            <p>9:00am - 12:00pm</p>
-                            <p>
-                                MTM6330 Web Production<br>
-                                Room T232<br>
-                                Robert McKenney
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>1:00pm - 5:00pm</p>
-                            <p>
-                                MTM6360 Applied Projects I<br>
-                                Room T229<br>
-                                John Kozodoj
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Thursday</p>
-                        <div class="slot">
-                            <p>10:30am - 12:30pm</p>
-                            <p>
-                                MTM6360 Applied Projects I<br>
-                                Room T229<br>
-                                Adam Jarvis
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>3:00pm - 5:00pm</p>
-                            <p>
-                                MTM6300 Motion Graphics<br>
-                                Room T202<br>
-                                Hussein Tayrani
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="day">
+              <p>Wednesday</p>
+              <div class="slot">
+                <p>8:00am - 12:00pm</p>
+                <p>
+                  <a href="courses/mtm6161.html">MTM6161 Design Foundations</a
+                  ><br />
+                  Room B364<br />
+                  <a href="professors/tremblk3.html">Katie Tremblay</a>
+                </p>
+              </div>
+              <div class="slot">
+                <p>1:30pm - 3:30pm</p>
+                <p>
+                  <a href="courses/mtm6130.html"
+                    >MTM6130 Responsive Web Design</a
+                  ><br />
+                  Room P303<br />
+                  Amel Dedic
+                </p>
+              </div>
             </div>
 
-            <div id="level-3-section-3" class="container tab-pane fade">
-                <div class="section-three d-md-flex justify-content-between">
-                    <div class="day">
-                        <p>Monday</p>
-                        <div class="slot">
-                            <p>12:00pm - 2:00pm</p>
-                            <p>
-                                MTM6361 Project Management Skills<br>
-                                Room N201<br>
-                                Adam Jarvis
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Tuesday</p>
-                        <div class="slot">
-                            <p>12:00pm - 3:00pm</p>
-                            <p>
-                                MTM6330 Web Production<br>
-                                Room T232<br>
-                                Robert McKenney
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>5:00pm - 8:00pm</p>
-                            <p>
-                                MTM6300 Motion Graphics<br>
-                                Room T308<br>
-                                Hussein Tayrani
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Wednesday</p>
-                        <div class="slot">
-                            <p>9:30am - 12:30pm</p>
-                            <p>
-                                MTM6331 Server-side Web Development<br>
-                                Room T232<br>
-                                <a href="professors/eisenbm.html">Michael Alan Eisenbraun</a>
-                            </p>
-                        </div>
-                        <div class="slot">
-                            <p>1:00pm - 4:00pm</p>
-                            <p>
-                                MTM6360 Applied Projects I<br>
-                                Room T229<br>
-                                Ken McGinn
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <p>Friday</p>
-                        <div class="slot">
-                            <p>11:30am - 1:30pm</p>
-                            <p>
-                                MTM6360 Applied Projects I<br>
-                                Room T229<br>
-                                Ken McGinn
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="day">
+              <p>Thursday</p>
+              <div class="slot">
+                <p>9:00am - 11:00am</p>
+                <p>
+                  <a href="courses/mtm6130.html"
+                    >MTM6130 Responsive Web Design</a
+                  ><br />
+                  Room P214<br />
+                  Amel Dedic
+                </p>
+              </div>
             </div>
+
+            <div class="day">
+              <p>Friday</p>
+              <div class="slot">
+                <p>9:00am - 11:00am</p>
+                <p>
+                  MTM6160 Digital Graphics<br />
+                  Room B165<br />
+                  Michel Lacroix
+                </p>
+              </div>
+              <div class="slot">
+                <p>12:00pm - 3:00pm</p>
+                <p>
+                  MTM6100 Introduction to DSLR<br />
+                  Room B364<br />
+                  <a href="professors/sharmaa.html">Abhay Sharma</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div id="level-1-section-3" class="container tab-pane fade">
+          <div class="d-md-flex justify-content-between">
+            <div class="day">
+              <p>Monday</p>
+              <div class="slot">
+                <p>2:00pm - 4:00pm</p>
+                <p>
+                  <a href="courses/mtm6130.html"
+                    >MTM6130 Responsive Web Design</a
+                  ><br />
+                  Room A136C<br />
+                  <a href="professors/sharmaa.html">Abhay Sharma</a>
+                </p>
+              </div>
+              <div class="slot">
+                <p>6:00pm - 10:00pm</p>
+                <p>
+                  <a href="courses/mtm6161.html">MTM6161 Design Foundations</a
+                  ><br />
+                  Room A136C<br />
+                  John Willman
+                </p>
+              </div>
+            </div>
+
+            <div class="day">
+              <p>Wednesday</p>
+              <div class="slot">
+                <p>10:00am - 1:00pm</p>
+                <p>
+                  MTM6100 Introduction to DSLR<br />
+                  Room T229<br />
+                  Andrew Balfour
+                </p>
+              </div>
+              <div class="slot">
+                <p>2:00pm - 4:00pm</p>
+                <p>
+                  MTM6160 Digital Graphics<br />
+                  Room T304<br />
+                  Michel Lacroix
+                </p>
+              </div>
+            </div>
+
+            <div class="day">
+              <p>Thursday</p>
+              <div class="slot">
+                <p>3:30pm - 5:30pm</p>
+                <p>
+                  <a href="courses/mtm6130.html"
+                    >MTM6130 Responsive Web Design</a
+                  ><br />
+                  Room B166<br />
+                  <a href="professors/sharmaa.html">Abhay Sharma</a>
+                </p>
+              </div>
+              <div class="slot">
+                <p>5:30pm - 7:30pm</p>
+                <p>
+                  MTM6160 Digital Graphics<br />
+                  Room A140A<br />
+                  Michel Lacroix
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>Level Three</p>
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#level-3-section-1"
+            >Section 1</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#level-3-section-2"
+            >Section 2</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#level-3-section-3"
+            >Section 3</a
+          >
+        </li>
+      </ul>
+
+      <div class="level-three tab-content">
+        <div id="level-3-section-1" class="container tab-pane active">
+          <div class="d-md-flex justify-content-between">
+            <div class="day">
+              <p>Monday</p>
+              <div class="slot">
+                <p>8:00am - 10:00am</p>
+                <p>
+                  MTM6361 Project Management Skills<br />
+                  Room T229<br />
+                  John Kozodoj
+                </p>
+              </div>
+            </div>
+
+            <div class="day">
+              <p>Tuesday</p>
+              <div class="slot">
+                <p>8:30am - 12:30pm</p>
+                <p>
+                  MTM6360 Applied Projects I<br />
+                  Room T229<br />
+                  John Kozodoj, Adam Jarvis
+                </p>
+              </div>
+            </div>
+
+            <div class="day">
+              <p>Wednesday</p>
+              <div class="slot">
+                <p>9:00am - 12:00pm</p>
+                <p>
+                  MTM6300 Motion Graphics<br />
+                  Room T308<br />
+                  Hussein Tayrani
+                </p>
+              </div>
+              <div class="slot">
+                <p>1:00pm - 4:00pm</p>
+                <p>
+                  MTM6330 Web Production<br />
+                  Room T232<br />
+                  Robert McKenney
+                </p>
+              </div>
+            </div>
+
+            <div class="day">
+              <p>Thursday</p>
+              <div class="slot">
+                <p>8:30am - 10:30am</p>
+                <p>
+                  MTM6360 Applied Projects I<br />
+                  Room T229<br />
+                  John Kozodoj, Adam Jarvis
+                </p>
+              </div>
+            </div>
+
+            <div class="day">
+              <p>Friday</p>
+              <div class="slot">
+                <p>8:00am - 11:00am</p>
+                <p>
+                  MTM6331 Server-side Web Development<br />
+                  Room T232<br />
+                  <a href="professors/eisenbm.html">Michael Alan Eisenbraun</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="level-3-section-2" class="container tab-pane fade">
+          <div class="section-two d-md-flex justify-content-between">
+            <div class="day">
+              <p>Monday</p>
+              <div class="slot">
+                <p>8:00am - 11:00am</p>
+                <p>
+                  MTM6331 Server-side Web Development<br />
+                  Room T232<br />
+                  <a href="professors/eisenbm.html">Michael Alan Eisenbraun</a>
+                </p>
+              </div>
+              <div class="slot">
+                <p>2:00pm - 4:00pm</p>
+                <p>
+                  MTM6361 Project Management Skills<br />
+                  Room N202<br />
+                  Adam Jarvis
+                </p>
+              </div>
+            </div>
+
+            <div class="day">
+              <p>Tuesday</p>
+              <div class="slot">
+                <p>9:00am - 12:00pm</p>
+                <p>
+                  MTM6330 Web Production<br />
+                  Room T232<br />
+                  Robert McKenney
+                </p>
+              </div>
+              <div class="slot">
+                <p>1:00pm - 5:00pm</p>
+                <p>
+                  MTM6360 Applied Projects I<br />
+                  Room T229<br />
+                  John Kozodoj
+                </p>
+              </div>
+            </div>
+
+            <div class="day">
+              <p>Thursday</p>
+              <div class="slot">
+                <p>10:30am - 12:30pm</p>
+                <p>
+                  MTM6360 Applied Projects I<br />
+                  Room T229<br />
+                  Adam Jarvis
+                </p>
+              </div>
+              <div class="slot">
+                <p>3:00pm - 5:00pm</p>
+                <p>
+                  MTM6300 Motion Graphics<br />
+                  Room T202<br />
+                  Hussein Tayrani
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="level-3-section-3" class="container tab-pane fade">
+          <div class="section-three d-md-flex justify-content-between">
+            <div class="day">
+              <p>Monday</p>
+              <div class="slot">
+                <p>12:00pm - 2:00pm</p>
+                <p>
+                  MTM6361 Project Management Skills<br />
+                  Room N201<br />
+                  Adam Jarvis
+                </p>
+              </div>
+            </div>
+
+            <div class="day">
+              <p>Tuesday</p>
+              <div class="slot">
+                <p>12:00pm - 3:00pm</p>
+                <p>
+                  MTM6330 Web Production<br />
+                  Room T232<br />
+                  Robert McKenney
+                </p>
+              </div>
+              <div class="slot">
+                <p>5:00pm - 8:00pm</p>
+                <p>
+                  MTM6300 Motion Graphics<br />
+                  Room T308<br />
+                  Hussein Tayrani
+                </p>
+              </div>
+            </div>
+
+            <div class="day">
+              <p>Wednesday</p>
+              <div class="slot">
+                <p>9:30am - 12:30pm</p>
+                <p>
+                  MTM6331 Server-side Web Development<br />
+                  Room T232<br />
+                  <a href="professors/eisenbm.html">Michael Alan Eisenbraun</a>
+                </p>
+              </div>
+              <div class="slot">
+                <p>1:00pm - 4:00pm</p>
+                <p>
+                  MTM6360 Applied Projects I<br />
+                  Room T229<br />
+                  Ken McGinn
+                </p>
+              </div>
+            </div>
+
+            <div class="day">
+              <p>Friday</p>
+              <div class="slot">
+                <p>11:30am - 1:30pm</p>
+                <p>
+                  MTM6360 Applied Projects I<br />
+                  Room T229<br />
+                  Ken McGinn
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
+
     <script src="./js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
