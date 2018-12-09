@@ -1,8 +1,309 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+// Sass Varibles
+$green: rgba(65, 117, 5, 1);
+$white: white;
+
+// Hidden class
 .hidden {
   display: none;
 }
+
+// Base Styles
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 body {
+  background-color: rgba($color: black, $alpha: 0.5);
   font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0;
+  @media (min-width: 1280px) {
+    font-size: 1.5rem;
+  }
+}
+header {
+  img {
+    width: 100%;
+    padding: 10px;
+    @media (min-width: 580px) {
+    }
+  }
+  // .bg-light {
+  //   background-color: $green !important;
+  //   color: white !important;
+  // }
+}
+h1 {
+  margin: 0;
+  padding: 10px;
+  font-weight: bolder;
+}
+h2 {
+  font-size: 2rem;
+  color: $white;
+  background-color: $green;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+h3,
+h4 {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 5px;
+  margin: 0;
+  @media (min-width: 580px) {
+    font-size: 2.5rem;
+  }
+}
+// Base Styles End
+
+// Overview Page Stles
+
+.overview {
+  background-image: url(..//..//img/programinfo-image.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+  .fly-left {
+    padding: 10px;
+  }
+  ul {
+    color: $white;
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+
+    li {
+      margin-bottom: 10px;
+      @media (min-width: 1280px) {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+  .col-lg-6 {
+    color: $white;
+    padding: 10px;
+    @media (min-width: 580px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 2rem;
+      // Width needs to be changed when scalling up to desktop -tyler
+    }
+  }
+  p {
+    color: $white;
+    padding: 10px;
+    margin: 0 auto;
+    @media (min-width: 580px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 2rem;
+    }
+  }
+  .btn {
+    color: black;
+    border: none;
+    padding: 10px;
+    margin: 0;
+  }
+  .collapse {
+    .card {
+      background-color: $green;
+      @media (min-width: 1280px) {
+        margin: 0 auto;
+      }
+      // Need classes in html in order for this to work -Tyler
+      // ul {
+      //   @media (min-width: 1280px) {
+      //     width: 100%;
+      //   }
+      //   li {
+      //     @media (min-width: 1280px) {
+      //       width: 100%;
+      //     }
+      //   }
+      // }
+    }
+  }
+}
+// Overview page style end
+
+// Courses Page
+.container {
+  #courses {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    @media (min-width: 580px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    @media (min-width: 1280px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .first-term,
+    .second-term,
+    .third-term,
+    .optional-term,
+    .fourth-term {
+      @media (min-width: 580px) {
+        width: 75%;
+        font-size: 1.5rem;
+      }
+      @media (min-width: 1280px) {
+        padding: 10px;
+        font-size: 2rem;
+        width: 50%;
+      }
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        cursor: pointer;
+      }
+    }
+    .course {
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      list-style-type: none;
+      color: white;
+      padding: 10px;
+      margin: 10px 0 10px 0;
+      font-size: 20px;
+      font-weight: bolder;
+      @media (min-width: 580px) {
+        font-size: 1.5rem;
+      }
+      @media (min-width: 1280px) {
+        font-size: 2rem;
+      }
+      .close {
+        padding: 0;
+        margin: 0;
+        @media (min-width: 580px) {
+          font-size: 2rem;
+        }
+        @media (min-width: 1280px) {
+          font-size: 3rem;
+        }
+      }
+      // Just calling Div here because of the .hidden up on line 3. If i call it here it doesnt work nor does the display hidden work.
+      div {
+        background-color: $green;
+        color: white;
+        margin-top: 10px;
+        padding: 10px;
+        a {
+          list-style-type: none;
+          color: black;
+          cursor: pointer;
+          font-weight: 900;
+          &:hover {
+            color: white;
+          }
+        }
+        p {
+          font-size: 1rem;
+          font-weight: normal;
+          @media (min-width: 580px) {
+            font-size: 1.5rem;
+          }
+          @media (min-width: 1280px) {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+// Course page style end
+
+//  Professors Page Styles
+.container {
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    text-align: center;
+    @media (min-width: 580px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 2rem;
+    }
+    li {
+      width: 50%;
+      margin: 0;
+      padding: 5px;
+      a {
+        text-decoration: underline;
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
+// Styles for each teacher when you click their name
+.container {
+  .content {
+    margin: 0;
+    padding: 10px;
+    .bar {
+      font-weight: 900;
+    }
+    ul {
+      padding: 0;
+    }
+  }
+}
+.photo {
+  width: 100%;
+  // Will need a extra div css to use flex box if we want i like the mockup or we can keep it like this -Tyler
+  img {
+    width: 100%;
+  }
+}
+.qAndA {
+  .bg-primary {
+    background-color: $green !important;
+  }
+}
+// Prof's page style end
+
+// Scheduales Page Styles
+.container {
+  .nav-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    .nav-link {
+      background-color: $green;
+      border: none;
+      color: $white;
+    }
+  }
 }
