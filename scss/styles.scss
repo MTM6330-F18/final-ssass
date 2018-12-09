@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 // Sass Varibles
 $green: rgba(65, 117, 5, 1);
+$transGreen: rgba(104, 194, 0, 0.3);
 $white: white;
+$light: rgba(248, 249, 250, 0.5);
+$headingBkGd: rgba(
+  $color: #000000,
+  $alpha: 0.6
+);
 
 // Hidden class
 .hidden {
@@ -20,6 +26,7 @@ html {
 }
 body {
   background-color: rgba($color: black, $alpha: 0.5);
+
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   margin: 0 auto;
@@ -35,10 +42,10 @@ header {
     @media (min-width: 580px) {
     }
   }
-  // .bg-light {
-  //   background-color: $green !important;
-  //   color: white !important;
-  // }
+  .bg-light {
+    background-color: rgba(248, 249, 250, 0.5) !important;
+    color: white !important;
+  }
 }
 h1 {
   margin: 0;
@@ -63,16 +70,21 @@ h4 {
     font-size: 2.5rem;
   }
 }
-// Base Styles End
 
-// Overview Page Stles
-
-.overview {
-  background-image: url(..//..//img/programinfo-image.jpg);
+.bkgd {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-blend-mode: saturation;
+}
+
+// Base Styles End
+
+// Overview Page Sytles
+
+.overview {
+  @extend .bkgd;
+  background-image: linear-gradient(#4175056b, #4175056b),
+    url(..//..//img/programinfo-image.jpg);
 }
 
 .container {
@@ -99,10 +111,10 @@ h4 {
     color: $white;
     padding: 10px;
     @media (min-width: 580px) {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
     @media (min-width: 1280px) {
-      font-size: 2rem;
+      font-size: 1rem;
       // Width needs to be changed when scalling up to desktop -tyler
     }
   }
@@ -111,10 +123,10 @@ h4 {
     padding: 10px;
     margin: 0 auto;
     @media (min-width: 580px) {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
     @media (min-width: 1280px) {
-      font-size: 2rem;
+      font-size: 1rem;
     }
   }
   .btn {
@@ -146,6 +158,13 @@ h4 {
 // Overview page style end
 
 // Courses Page
+
+.courses {
+  @extend .bkgd;
+  background-image: linear-gradient(#4175056b, #4175056b),
+    url(../..//img/course-image.jpg);
+}
+
 .container {
   #courses {
     width: 100%;
@@ -184,7 +203,7 @@ h4 {
       }
     }
     .course {
-      background-color: rgba($color: #000000, $alpha: 0.6);
+      background-color: $headingBkGd;
       list-style-type: none;
       color: white;
       padding: 10px;
@@ -239,6 +258,31 @@ h4 {
 // Course page style end
 
 //  Professors Page Styles
+
+.professors {
+  @extend .bkgd;
+  background-image: linear-gradient(#4175056b, #4175056b),
+    url(..//..//img/course-image.jpg);
+}
+
+.eisenbraun {
+  @extend .bkgd;
+  background-image: linear-gradient(#4175056b, #4175056b),
+    url(..//..//img/eisenbm.jpg);
+}
+
+.sharma {
+  @extend .bkgd;
+  background-image: linear-gradient(#4175056b, #4175056b),
+    url(..//..//img/sharmaa.jpg);
+}
+
+.tremblk3 {
+  @extend .bkgd;
+  background-image: linear-gradient(#4175056b, #4175056b),
+    url(..//..//img/tremblk3.jpg);
+}
+
 .container {
   ul {
     width: 100%;
@@ -294,6 +338,13 @@ h4 {
 // Prof's page style end
 
 // Scheduales Page Styles
+
+.schedule {
+  @extend .bkgd;
+  background-image: linear-gradient(#4175056b, #4175056b),
+    url(..//..//img/schedule-image.jpg);
+}
+
 .container {
   .nav-tabs {
     display: flex;
@@ -306,5 +357,12 @@ h4 {
       border: none;
       color: $white;
     }
+  }
+
+  .slot,
+  .dayOfWeek {
+    background-color: $headingBkGd;
+    border: 3px solid $transGreen;
+    margin: 10px;
   }
 }

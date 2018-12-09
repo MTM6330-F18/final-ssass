@@ -6338,6 +6338,10 @@ header img {
   width: 100%;
   padding: 10px; }
 
+header .bg-light {
+  background-color: rgba(248, 249, 250, 0.5) !important;
+  color: white !important; }
+
 h1 {
   margin: 0;
   padding: 10px;
@@ -6362,12 +6366,13 @@ h4 {
     h4 {
       font-size: 2.5rem; } }
 
-.overview {
-  background-image: url(..//..//img/programinfo-image.jpg);
+.bkgd, .overview, .courses, .professors, .eisenbraun, .sharma, .tremblk3, .schedule {
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-blend-mode: saturation; }
+  background-attachment: fixed; }
+
+.overview {
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/programinfo-image.jpg); }
 
 .container {
   padding: 0;
@@ -6390,20 +6395,20 @@ h4 {
     padding: 10px; }
     @media (min-width: 580px) {
       .container .col-lg-6 {
-        font-size: 1.5rem; } }
+        font-size: 1rem; } }
     @media (min-width: 1280px) {
       .container .col-lg-6 {
-        font-size: 2rem; } }
+        font-size: 1rem; } }
   .container p {
     color: white;
     padding: 10px;
     margin: 0 auto; }
     @media (min-width: 580px) {
       .container p {
-        font-size: 1.5rem; } }
+        font-size: 1rem; } }
     @media (min-width: 1280px) {
       .container p {
-        font-size: 2rem; } }
+        font-size: 1rem; } }
   .container .btn {
     color: black;
     border: none;
@@ -6414,6 +6419,9 @@ h4 {
     @media (min-width: 1280px) {
       .container .collapse .card {
         margin: 0 auto; } }
+
+.courses {
+  background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/course-image.jpg); }
 
 .container #courses {
   width: 100%;
@@ -6496,6 +6504,18 @@ h4 {
           .container #courses .course div p {
             font-size: 1.8rem; } }
 
+.professors {
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/course-image.jpg); }
+
+.eisenbraun {
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/eisenbm.jpg); }
+
+.sharma {
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/sharmaa.jpg); }
+
+.tremblk3 {
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/tremblk3.jpg); }
+
 .container ul {
   width: 100%;
   display: flex;
@@ -6535,6 +6555,9 @@ h4 {
 .qAndA .bg-primary {
   background-color: #417505 !important; }
 
+.schedule {
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/schedule-image.jpg); }
+
 .container .nav-tabs {
   display: flex;
   flex-direction: row;
@@ -6545,3 +6568,9 @@ h4 {
     background-color: #417505;
     border: none;
     color: white; }
+
+.container .slot,
+.container .dayOfWeek {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 3px solid rgba(104, 194, 0, 0.3);
+  margin: 10px; }
