@@ -6332,7 +6332,7 @@ body {
   padding: 0; }
   @media (min-width: 1280px) {
     body {
-      font-size: 1.5rem; } }
+      font-size: 1rem; } }
 
 header img {
   width: 100%;
@@ -6348,7 +6348,7 @@ h1 {
   font-weight: bolder; }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   background-color: #417505;
   text-align: center;
@@ -6357,14 +6357,15 @@ h2 {
 
 h3,
 h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   padding: 5px;
-  margin: 0; }
+  margin: 0;
+  color: white; }
   @media (min-width: 580px) {
     h3,
     h4 {
-      font-size: 2.5rem; } }
+      font-size: 1.5rem; } }
 
 .bkgd, .overview, .courses, .professors, .eisenbraun, .sharma, .tremblk3, .schedule {
   background-size: 100% auto;
@@ -6379,16 +6380,22 @@ h4 {
   margin: 0 auto; }
   .container .fly-left {
     padding: 10px; }
+  .container .headingBkGr {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 10px 0 10px 0; }
   .container ul {
     color: white;
     list-style-type: none;
     padding: 15px;
-    margin: 0; }
+    margin: 0;
+    display: flex;
+    flex-direction: column; }
     .container ul li {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column; }
       @media (min-width: 1280px) {
         .container ul li {
-          display: flex;
           justify-content: space-evenly; } }
   .container .col-lg-6 {
     color: white;
@@ -6410,7 +6417,7 @@ h4 {
       .container p {
         font-size: 1rem; } }
   .container .btn {
-    color: black;
+    color: white;
     border: none;
     padding: 10px;
     margin: 0; }
@@ -6444,7 +6451,7 @@ h4 {
     .container #courses .optional-term,
     .container #courses .fourth-term {
       width: 75%;
-      font-size: 1.5rem; } }
+      font-size: 1rem; } }
   @media (min-width: 1280px) {
     .container #courses .first-term,
     .container #courses .second-term,
@@ -6452,7 +6459,7 @@ h4 {
     .container #courses .optional-term,
     .container #courses .fourth-term {
       padding: 10px;
-      font-size: 2rem;
+      font-size: 1rem;
       width: 50%; } }
   .container #courses ul {
     padding: 0;
@@ -6469,10 +6476,10 @@ h4 {
     font-weight: bolder; }
     @media (min-width: 580px) {
       .container #courses .course {
-        font-size: 1.5rem; } }
+        font-size: 1rem; } }
     @media (min-width: 1280px) {
       .container #courses .course {
-        font-size: 2rem; } }
+        font-size: 1rem; } }
     .container #courses .course .close {
       padding: 0;
       margin: 0; }
@@ -6481,7 +6488,7 @@ h4 {
           font-size: 2rem; } }
       @media (min-width: 1280px) {
         .container #courses .course .close {
-          font-size: 3rem; } }
+          font-size: 1rem; } }
     .container #courses .course div {
       background-color: #417505;
       color: white;
@@ -6499,10 +6506,10 @@ h4 {
         font-weight: normal; }
         @media (min-width: 580px) {
           .container #courses .course div p {
-            font-size: 1.5rem; } }
+            font-size: 1rem; } }
         @media (min-width: 1280px) {
           .container #courses .course div p {
-            font-size: 1.8rem; } }
+            font-size: 1rem; } }
 
 .professors {
   background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/course-image.jpg); }
@@ -6526,10 +6533,10 @@ h4 {
   text-align: center; }
   @media (min-width: 580px) {
     .container ul {
-      font-size: 1.5rem; } }
+      font-size: 1rem; } }
   @media (min-width: 1280px) {
     .container ul {
-      font-size: 2rem; } }
+      font-size: 1rem; } }
   .container ul li {
     width: 50%;
     margin: 0;
@@ -6552,8 +6559,23 @@ h4 {
   .photo img {
     width: 100%; }
 
-.qAndA .bg-primary {
-  background-color: #417505 !important; }
+.qAndA {
+  display: flex;
+  flex-direction: column; }
+  .qAndA .question {
+    justify-content: flex-start;
+    max-width: 70%;
+    min-width: 70%;
+    margin: 10px 0 10px 0; }
+  .qAndA .answer {
+    align-self: flex-end;
+    max-width: 70%;
+    min-width: 70%;
+    margin: 10px 0 10px 0; }
+  .qAndA .bg-primary {
+    background-color: rgba(65, 117, 5, 0.5) !important; }
+  .qAndA .bg-secondary {
+    background-color: rgba(0, 0, 0, 0.6) !important; }
 
 .schedule {
   background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/schedule-image.jpg); }

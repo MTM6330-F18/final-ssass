@@ -9,6 +9,7 @@ $headingBkGd: rgba(
   $color: #000000,
   $alpha: 0.6
 );
+$headingBkGdSecondary: rgba(65, 117, 5, 0.5);
 
 // Hidden class
 .hidden {
@@ -32,7 +33,7 @@ body {
   margin: 0 auto;
   padding: 0;
   @media (min-width: 1280px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 header {
@@ -53,7 +54,7 @@ h1 {
   font-weight: bolder;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: $white;
   background-color: $green;
   text-align: center;
@@ -62,12 +63,14 @@ h2 {
 }
 h3,
 h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   padding: 5px;
   margin: 0;
+  color: white;
+
   @media (min-width: 580px) {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -93,20 +96,28 @@ h4 {
   .fly-left {
     padding: 10px;
   }
+  .headingBkGr {
+    background-color: $headingBkGd;
+    margin: 10px 0 10px 0;
+  }
+
   ul {
     color: $white;
     list-style-type: none;
     padding: 15px;
     margin: 0;
-
+    display: flex;
+    flex-direction: column;
     li {
       margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
       @media (min-width: 1280px) {
-        display: flex;
         justify-content: space-evenly;
       }
     }
   }
+
   .col-lg-6 {
     color: $white;
     padding: 10px;
@@ -130,7 +141,7 @@ h4 {
     }
   }
   .btn {
-    color: black;
+    color: white;
     border: none;
     padding: 10px;
     margin: 0;
@@ -187,11 +198,11 @@ h4 {
     .fourth-term {
       @media (min-width: 580px) {
         width: 75%;
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
       @media (min-width: 1280px) {
         padding: 10px;
-        font-size: 2rem;
+        font-size: 1rem;
         width: 50%;
       }
     }
@@ -211,10 +222,10 @@ h4 {
       font-size: 20px;
       font-weight: bolder;
       @media (min-width: 580px) {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
       @media (min-width: 1280px) {
-        font-size: 2rem;
+        font-size: 1rem;
       }
       .close {
         padding: 0;
@@ -223,7 +234,7 @@ h4 {
           font-size: 2rem;
         }
         @media (min-width: 1280px) {
-          font-size: 3rem;
+          font-size: 1rem;
         }
       }
       // Just calling Div here because of the .hidden up on line 3. If i call it here it doesnt work nor does the display hidden work.
@@ -245,10 +256,10 @@ h4 {
           font-size: 1rem;
           font-weight: normal;
           @media (min-width: 580px) {
-            font-size: 1.5rem;
+            font-size: 1rem;
           }
           @media (min-width: 1280px) {
-            font-size: 1.8rem;
+            font-size: 1rem;
           }
         }
       }
@@ -293,10 +304,10 @@ h4 {
     font-size: 1rem;
     text-align: center;
     @media (min-width: 580px) {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
     @media (min-width: 1280px) {
-      font-size: 2rem;
+      font-size: 1rem;
     }
     li {
       width: 50%;
@@ -331,8 +342,25 @@ h4 {
   }
 }
 .qAndA {
+  display: flex;
+  flex-direction: column;
+  .question {
+    justify-content: flex-start;
+    max-width: 70%;
+    min-width: 70%;
+    margin: 10px 0 10px 0;
+  }
+  .answer {
+    align-self: flex-end;
+    max-width: 70%;
+    min-width: 70%;
+    margin: 10px 0 10px 0;
+  }
   .bg-primary {
-    background-color: $green !important;
+    background-color: $headingBkGdSecondary !important;
+  }
+  .bg-secondary {
+    background-color: $headingBkGd !important;
   }
 }
 // Prof's page style end
