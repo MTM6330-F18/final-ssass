@@ -79,7 +79,7 @@ h4 {
 
 // Base Styles End
 
-// Overview Page Sytles
+// Overview Page Styles
 
 .overview {
   @extend .bkgd;
@@ -268,19 +268,19 @@ h4 {
 .eisenbraun {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(..//..//img/eisenbm.jpg);
+    url(..//..//img/eisenbm-background.jpg);
 }
 
 .sharma {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(..//..//img/sharmaa.jpg);
+    url(..//..//img/sharmaa-background.jpg);
 }
 
 .tremblk3 {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(..//..//img/tremblk3.jpg);
+    url(..//..//img/tremblk3-background.jpg);
 }
 
 .container {
