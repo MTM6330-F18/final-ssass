@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 // Sass Varibles
 $green: rgba(65, 117, 5, 1);
+$primary: rgba(65, 117, 5, 1);
 $transGreen: rgba(104, 194, 0, 0.3);
 $white: white;
 $light: rgba(248, 249, 250, 0.5);
@@ -10,6 +11,8 @@ $headingBkGd: rgba(
   $alpha: 0.6
 );
 $headingBkGdSecondary: rgba(65, 117, 5, 0.5);
+$tabletBreakpoint: 580px;
+$desktopBreakpoint: 1280px;
 
 // Hidden class
 .hidden {
@@ -32,7 +35,7 @@ body {
   font-size: 1rem;
   margin: 0 auto;
   padding: 0;
-  @media (min-width: 1280px) {
+  @media (min-width: $desktopBreakpoint) {
     font-size: 1rem;
   }
 }
@@ -40,11 +43,11 @@ header {
   img {
     width: 100%;
     padding: 10px;
-    @media (min-width: 580px) {
+    @media (min-width: $tabletBreakpoint) {
     }
   }
   .bg-light {
-    background-color: rgba(248, 249, 250, 0.5) !important;
+    background-color: $light !important;
     color: white !important;
   }
 }
@@ -52,11 +55,12 @@ h1 {
   margin: 0;
   padding: 10px;
   font-weight: bolder;
+  color: $white;
 }
 h2 {
   font-size: 1.5rem;
   color: $white;
-  background-color: $green;
+  background-color: $primary;
   text-align: center;
   padding: 5px;
   margin: 0;
@@ -65,11 +69,11 @@ h3,
 h4 {
   font-size: 1.5rem;
   font-weight: bolder;
-  padding: 5px;
+  padding: 10px;
   margin: 0;
   color: white;
 
-  @media (min-width: 580px) {
+  @media (min-width: $tabletBreakpoint) {
     font-size: 1.5rem;
   }
 }
@@ -84,7 +88,7 @@ h4 {
 
 // Overview Page Styles
 
-.overview {
+#overview {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
     url(..//..//img/programinfo-image.jpg);
@@ -110,31 +114,20 @@ h4 {
     li {
       margin-bottom: 10px;
 
-      @media (min-width: 1280px) {
+      @media (min-width: $desktopBreakpoint) {
         justify-content: space-evenly;
       }
     }
   }
 
-  .col-lg-6 {
-    color: $white;
-    padding: 10px;
-    @media (min-width: 580px) {
-      font-size: 1rem;
-    }
-    @media (min-width: 1280px) {
-      font-size: 1rem;
-      // Width needs to be changed when scalling up to desktop -tyler
-    }
-  }
   p {
     color: $white;
     padding: 10px;
     margin: 0 auto;
-    @media (min-width: 580px) {
+    @media (min-width: $tabletBreakpoint) {
       font-size: 1rem;
     }
-    @media (min-width: 1280px) {
+    @media (min-width: $desktopBreakpoint) {
       font-size: 1rem;
     }
   }
@@ -147,178 +140,190 @@ h4 {
   .collapse {
     .card {
       background-color: $green;
-      @media (min-width: 1280px) {
+      @media (min-width: $desktopBreakpoint) {
         margin: 0 auto;
       }
       // Need classes in html in order for this to work -Tyler
       // ul {
-      //   @media (min-width: 1280px) {
+      //   @media (min-width: $desktopBreakpoint) {
       //     width: 100%;
       //   }
       //   li {
-      //     @media (min-width: 1280px) {
+      //     @media (min-width: $desktopBreakpoint) {
       //       width: 100%;
       //     }
       //   }
       // }
     }
   }
+  .w-49 {
+    width: 49%;
+  }
 }
 // Overview page style end
 
 // Courses Page
 
-.courses {
+#courses {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
     url(../..//img/course-image.jpg);
 }
 
-.container {
-  #courses {
-    width: 100%;
+#coursesList {
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  @media (min-width: $tabletBreakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  @media (min-width: $desktopBreakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .first-term,
+  .second-term,
+  .third-term,
+  .optional-term,
+  .fourth-term {
+    @media (min-width: $tabletBreakpoint) {
+      padding: 10px;
+      width: 50%;
+      font-size: 1rem;
+    }
+    @media (min-width: $desktopBreakpoint) {
+      padding: 10px;
+      font-size: 1rem;
+      width: 50%;
+    }
+  }
+  ul {
+    padding: 0;
     margin: 0;
-    padding: 5px;
-    @media (min-width: 580px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+    li {
+      cursor: pointer;
     }
-    @media (min-width: 1280px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+  }
+  .course {
+    background-color: $headingBkGd;
+    list-style-type: none;
+    color: white;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 100%;
+    @media (min-width: $tabletBreakpoint) {
+      font-size: 1rem;
     }
-    .first-term,
-    .second-term,
-    .third-term,
-    .optional-term,
-    .fourth-term {
-      @media (min-width: 580px) {
-        width: 75%;
-        font-size: 1rem;
-      }
-      @media (min-width: 1280px) {
-        padding: 10px;
-        font-size: 1rem;
-        width: 50%;
-      }
+    @media (min-width: $desktopBreakpoint) {
+      font-size: 1rem;
     }
-    ul {
+    .close {
       padding: 0;
       margin: 0;
-      li {
-        cursor: pointer;
+      @media (min-width: $tabletBreakpoint) {
+        font-size: 2rem;
+      }
+      @media (min-width: $desktopBreakpoint) {
+        font-size: 1rem;
       }
     }
-    .course {
-      background-color: $headingBkGd;
-      list-style-type: none;
+    // Just calling Div here because of the .hidden up on line 3. If i call it here it doesnt work nor does the display hidden work.
+    div {
+      background-color: $green;
       color: white;
+      margin-top: 10px;
       padding: 10px;
-      margin: 10px 0 10px 0;
-      font-size: 20px;
-      font-weight: bolder;
-      @media (min-width: 580px) {
-        font-size: 1rem;
-      }
-      @media (min-width: 1280px) {
-        font-size: 1rem;
-      }
-      .close {
-        padding: 0;
-        margin: 0;
-        @media (min-width: 580px) {
-          font-size: 2rem;
+      a {
+        list-style-type: none;
+        color: black;
+        cursor: pointer;
+        font-weight: 900;
+        &:hover {
+          color: white;
         }
-        @media (min-width: 1280px) {
+      }
+      p {
+        font-size: 1rem;
+        font-weight: normal;
+        @media (min-width: $tabletBreakpoint) {
           font-size: 1rem;
         }
-      }
-      // Just calling Div here because of the .hidden up on line 3. If i call it here it doesnt work nor does the display hidden work.
-      div {
-        background-color: $green;
-        color: white;
-        margin-top: 10px;
-        padding: 10px;
-        a {
-          list-style-type: none;
-          color: black;
-          cursor: pointer;
-          font-weight: 900;
-          &:hover {
-            color: white;
-          }
-        }
-        p {
+        @media (min-width: $desktopBreakpoint) {
           font-size: 1rem;
-          font-weight: normal;
-          @media (min-width: 580px) {
-            font-size: 1rem;
-          }
-          @media (min-width: 1280px) {
-            font-size: 1rem;
-          }
         }
       }
     }
   }
 }
+
 // Course page style end
 
-//  Professors Page Styles
+// Professors Page Styles
 
-.professors {
+#professors {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
     url(..//..//img/course-image.jpg);
 }
 
-.eisenbraun {
+#eisenbm {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
     url(..//..//img/eisenbm-background.jpg);
 }
 
-.sharma {
+#sharmaa {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
     url(..//..//img/sharmaa-background.jpg);
 }
 
-.tremblk3 {
+#tremblk3 {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
     url(..//..//img/tremblk3-background.jpg);
 }
 
-.container {
-  ul {
+#professorList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 1rem;
+  font-size: 1rem;
+
+  @media (min-width: $tabletBreakpoint) {
+    margin: 0;
+  }
+  
+  li {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    font-size: 1rem;
-    text-align: center;
-    @media (min-width: 580px) {
-      font-size: 1rem;
-    }
-    @media (min-width: 1280px) {
-      font-size: 1rem;
-    }
-    li {
+    text-align: left;
+
+    @media (min-width: $tabletBreakpoint) {
+      text-align: center;
       width: 50%;
-      margin: 0;
-      padding: 5px;
-      a {
-        text-decoration: underline;
-        color: black;
-        cursor: pointer;
-      }
+    }
+
+    @media (min-width: $desktopBreakpoint) {
+      width: 33.3%;
+    }
+
+    a {
+      text-decoration: underline;
+      color: $white;
+      cursor: pointer;
+      font-weight: bold;
     }
   }
 }
+
 // Styles for each teacher when you click their name
 .container {
   .content {
@@ -361,9 +366,9 @@ h4 {
     background-color: $headingBkGd !important;
   }
 }
-// Prof's page style end
+// Profs page style end
 
-// Scheduales Page Styles
+// Schedules Page Styles
 
 .schedule {
   @extend .bkgd;

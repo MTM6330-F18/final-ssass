@@ -6345,7 +6345,8 @@ header .bg-light {
 h1 {
   margin: 0;
   padding: 10px;
-  font-weight: bolder; }
+  font-weight: bolder;
+  color: white; }
 
 h2 {
   font-size: 1.5rem;
@@ -6359,7 +6360,7 @@ h3,
 h4 {
   font-size: 1.5rem;
   font-weight: bolder;
-  padding: 5px;
+  padding: 10px;
   margin: 0;
   color: white; }
   @media (min-width: 580px) {
@@ -6367,12 +6368,12 @@ h4 {
     h4 {
       font-size: 1.5rem; } }
 
-.bkgd, .overview, .courses, .professors, .eisenbraun, .sharma, .tremblk3, .schedule {
+.bkgd, #overview, #courses, #professors, #eisenbm, #sharmaa, #tremblk3, .schedule {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-.overview {
+#overview {
   background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/programinfo-image.jpg); }
 
 .container {
@@ -6393,15 +6394,6 @@ h4 {
       @media (min-width: 1280px) {
         .container ul li {
           justify-content: space-evenly; } }
-  .container .col-lg-6 {
-    color: white;
-    padding: 10px; }
-    @media (min-width: 580px) {
-      .container .col-lg-6 {
-        font-size: 1rem; } }
-    @media (min-width: 1280px) {
-      .container .col-lg-6 {
-        font-size: 1rem; } }
   .container p {
     color: white;
     padding: 10px;
@@ -6422,125 +6414,133 @@ h4 {
     @media (min-width: 1280px) {
       .container .collapse .card {
         margin: 0 auto; } }
+  .container .w-49 {
+    width: 49%; }
 
-.courses {
+#courses {
   background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/course-image.jpg); }
 
-.container #courses {
+#coursesList {
   width: 100%;
   margin: 0;
   padding: 5px; }
   @media (min-width: 580px) {
-    .container #courses {
+    #coursesList {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly; } }
   @media (min-width: 1280px) {
-    .container #courses {
+    #coursesList {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly; } }
   @media (min-width: 580px) {
-    .container #courses .first-term,
-    .container #courses .second-term,
-    .container #courses .third-term,
-    .container #courses .optional-term,
-    .container #courses .fourth-term {
-      width: 75%;
+    #coursesList .first-term,
+    #coursesList .second-term,
+    #coursesList .third-term,
+    #coursesList .optional-term,
+    #coursesList .fourth-term {
+      padding: 10px;
+      width: 50%;
       font-size: 1rem; } }
   @media (min-width: 1280px) {
-    .container #courses .first-term,
-    .container #courses .second-term,
-    .container #courses .third-term,
-    .container #courses .optional-term,
-    .container #courses .fourth-term {
+    #coursesList .first-term,
+    #coursesList .second-term,
+    #coursesList .third-term,
+    #coursesList .optional-term,
+    #coursesList .fourth-term {
       padding: 10px;
       font-size: 1rem;
       width: 50%; } }
-  .container #courses ul {
+  #coursesList ul {
     padding: 0;
     margin: 0; }
-    .container #courses ul li {
+    #coursesList ul li {
       cursor: pointer; }
-  .container #courses .course {
+  #coursesList .course {
     background-color: rgba(0, 0, 0, 0.6);
     list-style-type: none;
     color: white;
     padding: 10px;
     margin: 10px 0 10px 0;
     font-size: 20px;
-    font-weight: bolder; }
+    font-weight: bolder;
+    width: 100%; }
     @media (min-width: 580px) {
-      .container #courses .course {
+      #coursesList .course {
         font-size: 1rem; } }
     @media (min-width: 1280px) {
-      .container #courses .course {
+      #coursesList .course {
         font-size: 1rem; } }
-    .container #courses .course .close {
+    #coursesList .course .close {
       padding: 0;
       margin: 0; }
       @media (min-width: 580px) {
-        .container #courses .course .close {
+        #coursesList .course .close {
           font-size: 2rem; } }
       @media (min-width: 1280px) {
-        .container #courses .course .close {
+        #coursesList .course .close {
           font-size: 1rem; } }
-    .container #courses .course div {
+    #coursesList .course div {
       background-color: #417505;
       color: white;
       margin-top: 10px;
       padding: 10px; }
-      .container #courses .course div a {
+      #coursesList .course div a {
         list-style-type: none;
         color: black;
         cursor: pointer;
         font-weight: 900; }
-        .container #courses .course div a:hover {
+        #coursesList .course div a:hover {
           color: white; }
-      .container #courses .course div p {
+      #coursesList .course div p {
         font-size: 1rem;
         font-weight: normal; }
         @media (min-width: 580px) {
-          .container #courses .course div p {
+          #coursesList .course div p {
             font-size: 1rem; } }
         @media (min-width: 1280px) {
-          .container #courses .course div p {
+          #coursesList .course div p {
             font-size: 1rem; } }
 
-.professors {
+#professors {
   background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/course-image.jpg); }
 
-.eisenbraun {
+#eisenbm {
   background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/eisenbm-background.jpg); }
 
-.sharma {
+#sharmaa {
   background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/sharmaa-background.jpg); }
 
-.tremblk3 {
+#tremblk3 {
   background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/tremblk3-background.jpg); }
 
-.container ul {
+#professorList {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  font-size: 1rem;
-  text-align: center; }
+  margin: 1rem;
+  font-size: 1rem; }
   @media (min-width: 580px) {
-    .container ul {
-      font-size: 1rem; } }
-  @media (min-width: 1280px) {
-    .container ul {
-      font-size: 1rem; } }
-  .container ul li {
-    width: 50%;
-    margin: 0;
-    padding: 5px; }
-    .container ul li a {
+    #professorList {
+      margin: 0; } }
+  #professorList li {
+    width: 100%;
+    text-align: left; }
+    @media (min-width: 580px) {
+      #professorList li {
+        text-align: center;
+        width: 50%; } }
+    @media (min-width: 1280px) {
+      #professorList li {
+        width: 33.3%; } }
+    #professorList li a {
       text-decoration: underline;
-      color: black;
-      cursor: pointer; }
+      color: white;
+      cursor: pointer;
+      font-weight: bold; }
 
 .container .content {
   margin: 0;
