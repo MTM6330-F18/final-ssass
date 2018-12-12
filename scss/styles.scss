@@ -162,6 +162,29 @@ h4 {
       @media (min-width: $desktopBreakpoint) {
         margin: 0 auto;
       }
+      .fas fa-plus:after {
+        content: '\f067';
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #373534;
+        font-size: 30px;
+        font-weight: 900;
+      }
+
+      .fas fa-minus:after {
+        content: '\f068';
+        width: 17px;
+        height: 4px;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        background: #373534;
+        font-size: 30px;
+        font-weight: 900;
+      }
       // Need classes in html in order for this to work -Tyler
       // ul {
       //   @media (min-width: $desktopBreakpoint) {
@@ -268,10 +291,11 @@ h4 {
     }
     // Just calling Div here because of the .hidden up on line 3. If i call it here it doesnt work nor does the display hidden work.
     div {
-      background-color: $green;
+      background-color: rgba(65, 115, 5, 0.5);
       color: white;
       margin-top: 10px;
       padding: 10px;
+      cursor: default;
       a {
         list-style-type: none;
         color: black;
@@ -540,4 +564,9 @@ h4 {
       }
     }
   }
+}
+// footer styles
+footer {
+  background-color: rgba(0, 21, 0, 0.6);
+  text-align: center;
 }
