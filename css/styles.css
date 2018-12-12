@@ -6368,13 +6368,17 @@ h4 {
     h4 {
       font-size: 1.5rem; } }
 
-.bkgd, #overview, #courses, #professors, #eisenbm, #sharmaa, #tremblk3, .schedule {
+.bkgd, #overview, #courses,
+.courses, #professors, #eisenbm, #sharmaa, #tremblk3, .schedule {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
 #overview {
-  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/programinfo-image.jpg); }
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/programinfo-imageMobile.jpg); }
+  @media (min-width: 800px) {
+    #overview {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/programinfo-image.jpg); } }
 
 .container {
   padding: 0;
@@ -6417,8 +6421,21 @@ h4 {
   .container .w-49 {
     width: 49%; }
 
-#courses {
-  background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/course-image.jpg); }
+#courses,
+.courses {
+  background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/course-imageMobile.jpg); }
+  @media (min-width: 580px) {
+    #courses,
+    .courses {
+      background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/course-imageTablet.jpg); } }
+  @media (min-width: 1000px) {
+    #courses,
+    .courses {
+      background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/course-imageSmallDesktop.jpg); } }
+  @media (min-width: 1280px) {
+    #courses,
+    .courses {
+      background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/course-image.jpg); } }
 
 #coursesList {
   width: 100%;
@@ -6504,16 +6521,61 @@ h4 {
             font-size: 1rem; } }
 
 #professors {
-  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/course-image.jpg); }
+  background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/course-imageMobile.jpg); }
+  @media (min-width: 580px) {
+    #professors {
+      background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/course-imageTablet.jpg); } }
+  @media (min-width: 1000px) {
+    #professors {
+      background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/course-imageSmallDesktop.jpg); } }
+  @media (min-width: 1280px) {
+    #professors {
+      background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/course-image.jpg); } }
 
 #eisenbm {
-  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/eisenbm-background.jpg); }
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/eisenbm/eisenbm-mobile.jpg); }
+  @media (min-width: 580px) {
+    #eisenbm {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/eisenbm/eisenbm-tablet.jpg); } }
+  @media (min-width: 800px) {
+    #eisenbm {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/eisenbm/eisenbm-medium.jpg); } }
+  @media (min-width: 1000px) {
+    #eisenbm {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/eisenbm/eisenbm-smallDesktop.jpg); } }
+  @media (min-width: 1280px) {
+    #eisenbm {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/eisenbm/eisenbm-desktop.jpg); } }
 
 #sharmaa {
-  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/sharmaa-background.jpg); }
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/sharmaa/sharmaa-mobile.jpg); }
+  @media (min-width: 580px) {
+    #sharmaa {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/sharmaa/sharmaa-tablet.jpg); } }
+  @media (min-width: 800px) {
+    #sharmaa {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/sharmaa/sharmaa-medium.jpg); } }
+  @media (min-width: 1000px) {
+    #sharmaa {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/sharmaa/sharmaa-smallDesktop.jpg); } }
+  @media (min-width: 1280px) {
+    #sharmaa {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/sharmaa/sharmaa-desktop.jpg); } }
 
 #tremblk3 {
-  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/tremblk3-background.jpg); }
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/tremblk3/tremblk3-mobile.jpg); }
+  @media (min-width: 580px) {
+    #tremblk3 {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/tremblk3/tremblk3-tablet.jpg); } }
+  @media (min-width: 800px) {
+    #tremblk3 {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/tremblk3/tremblk3-medium.jpg); } }
+  @media (min-width: 1000px) {
+    #tremblk3 {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/tremblk3/tremblk3-smallDesktop.jpg); } }
+  @media (min-width: 1280px) {
+    #tremblk3 {
+      background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/tremblk3/tremblk3-desktop.jpg); } }
 
 #professorList {
   width: 100%;
@@ -6545,6 +6607,11 @@ h4 {
 .container .content {
   margin: 0;
   padding: 10px; }
+  .container .content a {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+    font-weight: bold; }
   .container .content .bar {
     font-weight: 900; }
   .container .content ul {
@@ -6574,7 +6641,16 @@ h4 {
     background-color: rgba(0, 0, 0, 0.6) !important; }
 
 .schedule {
-  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/schedule-image.jpg); }
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/schedule-imageMobile.jpg); }
+  @media (min-width: 580px) {
+    .schedule {
+      background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/schedule-imageTablet.jpg); } }
+  @media (min-width: 1000px) {
+    .schedule {
+      background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/schedule-imageSmallDesktop.jpg); } }
+  @media (min-width: 1280px) {
+    .schedule {
+      background-image: linear-gradient(#4175056b, #4175056b), url(../..//img/schedule-image.jpg); } }
 
 .container .nav-tabs {
   display: flex;
@@ -6592,3 +6668,9 @@ h4 {
   background-color: rgba(0, 0, 0, 0.6);
   border: 3px solid rgba(104, 194, 0, 0.3);
   margin: 10px; }
+  .container .slot a,
+  .container .dayOfWeek a {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+    font-weight: bold; }
