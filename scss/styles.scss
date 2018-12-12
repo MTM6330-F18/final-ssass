@@ -11,7 +11,11 @@ $headingBkGd: rgba(
   $alpha: 0.6
 );
 $headingBkGdSecondary: rgba(65, 117, 5, 0.5);
+
+// breakpoints
 $tabletBreakpoint: 580px;
+$bkGdImgBreakpointMedium: 800px;
+$smallDesktopBreakpoint: 1000px;
 $desktopBreakpoint: 1280px;
 
 // Hidden class
@@ -91,7 +95,12 @@ h4 {
 #overview {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(..//..//img/programinfo-image.jpg);
+    url(..//..//img/programinfo-imageMobile.jpg);
+
+  @media (min-width: $bkGdImgBreakpointMedium) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/programinfo-image.jpg);
+  }
 }
 
 .container {
@@ -164,10 +173,25 @@ h4 {
 
 // Courses Page
 
-#courses {
+// background image breakpoints
+#courses,
+.courses {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(../..//img/course-image.jpg);
+    url(../..//img/course-imageMobile.jpg);
+
+  @media (min-width: $tabletBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(../..//img/course-imageTablet.jpg);
+  }
+  @media (min-width: $smallDesktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(../..//img/course-imageSmallDesktop.jpg);
+  }
+  @media (min-width: $desktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(../..//img/course-image.jpg);
+  }
 }
 
 #coursesList {
@@ -265,28 +289,108 @@ h4 {
 
 // Professors Page Styles
 
+// background image breakpoints
 #professors {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(..//..//img/course-image.jpg);
+    url(../..//img/course-imageMobile.jpg);
+
+  @media (min-width: $tabletBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(../..//img/course-imageTablet.jpg);
+  }
+  @media (min-width: $smallDesktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(../..//img/course-imageSmallDesktop.jpg);
+  }
+  @media (min-width: $desktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(../..//img/course-image.jpg);
+  }
 }
+
+// michael background image breakpoints
 
 #eisenbm {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(..//..//img/eisenbm-background-2.jpg);
+    url(..//..//img/eisenbm/eisenbm-mobile.jpg);
+
+  @media (min-width: $tabletBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/eisenbm/eisenbm-tablet.jpg);
+  }
+
+  @media (min-width: $bkGdImgBreakpointMedium) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/eisenbm/eisenbm-medium.jpg);
+  }
+
+  @media (min-width: $smallDesktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/eisenbm/eisenbm-smallDesktop.jpg);
+  }
+
+  @media (min-width: $desktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/eisenbm/eisenbm-desktop.jpg);
+  }
 }
+
+// abhay background image breakpoints
 
 #sharmaa {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(..//..//img/sharmaa-background.jpg);
+    url(..//..//img/sharmaa/sharmaa-mobile.jpg);
+
+  @media (min-width: $tabletBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/sharmaa/sharmaa-tablet.jpg);
+  }
+
+  @media (min-width: $bkGdImgBreakpointMedium) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/sharmaa/sharmaa-medium.jpg);
+  }
+
+  @media (min-width: $smallDesktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/sharmaa/sharmaa-smallDesktop.jpg);
+  }
+
+  @media (min-width: $desktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/sharmaa/sharmaa-desktop.jpg);
+  }
 }
+
+// katie background image breakpoints
 
 #tremblk3 {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(..//..//img/tremblk3-background-2.jpg);
+    url(..//..//img/tremblk3/tremblk3-mobile.jpg);
+
+  @media (min-width: $tabletBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/tremblk3/tremblk3-tablet.jpg);
+  }
+
+  @media (min-width: $bkGdImgBreakpointMedium) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/tremblk3/tremblk3-medium.jpg);
+  }
+
+  @media (min-width: $smallDesktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/tremblk3/tremblk3-smallDesktop.jpg);
+  }
+
+  @media (min-width: $desktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(..//..//img/tremblk3/tremblk3-desktop.jpg);
+  }
 }
 
 #professorList {
@@ -329,6 +433,12 @@ h4 {
   .content {
     margin: 0;
     padding: 10px;
+    a {
+      text-decoration: underline;
+      color: $white;
+      cursor: pointer;
+      font-weight: bold;
+    }
     .bar {
       font-weight: 900;
     }
@@ -370,10 +480,24 @@ h4 {
 
 // Schedules Page Styles
 
+// background image breakpoints
 .schedule {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(..//..//img/schedule-image.jpg);
+    url(..//..//img/schedule-imageMobile.jpg);
+
+  @media (min-width: $tabletBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(../..//img/schedule-imageTablet.jpg);
+  }
+  @media (min-width: $smallDesktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(../..//img/schedule-imageSmallDesktop.jpg);
+  }
+  @media (min-width: $desktopBreakpoint) {
+    background-image: linear-gradient(#4175056b, #4175056b),
+      url(../..//img/schedule-image.jpg);
+  }
 }
 
 .container {
@@ -395,5 +519,11 @@ h4 {
     background-color: $headingBkGd;
     border: 3px solid $transGreen;
     margin: 10px;
+    a {
+      text-decoration: underline;
+      color: $white;
+      cursor: pointer;
+      font-weight: bold;
+    }
   }
 }
