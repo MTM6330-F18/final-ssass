@@ -6338,10 +6338,6 @@ header img {
   width: 100%;
   padding: 10px; }
 
-header .bg-light {
-  background-color: rgba(248, 249, 250, 0.5) !important;
-  color: white !important; }
-
 h1 {
   margin: 0;
   padding: 10px;
@@ -6413,11 +6409,11 @@ h4 {
     border: none;
     padding: 10px;
     margin: 0; }
-  .container .collapse .card {
-    background-color: #417505; }
-    @media (min-width: 1280px) {
-      .container .collapse .card {
-        margin: 0 auto; } }
+  .container .card-body {
+    background-color: rgba(0, 0, 0, 0.6); }
+  @media (min-width: 1280px) {
+    .container .collapse .card {
+      margin: 0 auto; } }
   .container .w-49 {
     width: 49%; }
 
@@ -6663,14 +6659,16 @@ h4 {
     border: none;
     color: white; }
 
-.container .slot,
-.container .dayOfWeek {
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 3px solid rgba(104, 194, 0, 0.3);
-  margin: 10px; }
-  .container .slot a,
-  .container .dayOfWeek a {
-    text-decoration: underline;
-    color: white;
-    cursor: pointer;
-    font-weight: bold; }
+.container .day {
+  flex: 1 1 20%; }
+  .container .day .slot,
+  .container .day .dayOfWeek {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 3px solid rgba(104, 194, 0, 0.3);
+    margin: 10px; }
+    .container .day .slot a,
+    .container .day .dayOfWeek a {
+      text-decoration: underline;
+      color: white;
+      cursor: pointer;
+      font-weight: bold; }

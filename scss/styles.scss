@@ -3,6 +3,7 @@
 // Sass Varibles
 $green: rgba(65, 117, 5, 1);
 $primary: rgba(65, 117, 5, 1);
+$secondary: rgba(0, 21, 0, 0.6);
 $transGreen: rgba(104, 194, 0, 0.3);
 $white: white;
 $light: rgba(248, 249, 250, 0.5);
@@ -50,10 +51,16 @@ header {
     @media (min-width: $tabletBreakpoint) {
     }
   }
-  .bg-light {
-    background-color: $light !important;
-    color: white !important;
-  }
+  // .navbar-nav .nav-link {
+  //   color: #fff;
+  // }
+  // .navbar-light .navbar-toggler {
+  //   background-color: #fff;
+  // }
+  // .bg-light {
+  //   background-color: $light !important;
+  //   color: white !important;
+  // }
 }
 h1 {
   margin: 0;
@@ -146,9 +153,12 @@ h4 {
     padding: 10px;
     margin: 0;
   }
+
+  .card-body {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
   .collapse {
     .card {
-      background-color: $green;
       @media (min-width: $desktopBreakpoint) {
         margin: 0 auto;
       }
@@ -514,16 +524,20 @@ h4 {
     }
   }
 
-  .slot,
-  .dayOfWeek {
-    background-color: $headingBkGd;
-    border: 3px solid $transGreen;
-    margin: 10px;
-    a {
-      text-decoration: underline;
-      color: $white;
-      cursor: pointer;
-      font-weight: bold;
+  .day {
+    flex: 1 1 20%;
+
+    .slot,
+    .dayOfWeek {
+      background-color: $headingBkGd;
+      border: 3px solid $transGreen;
+      margin: 10px;
+      a {
+        text-decoration: underline;
+        color: $white;
+        cursor: pointer;
+        font-weight: bold;
+      }
     }
   }
 }
