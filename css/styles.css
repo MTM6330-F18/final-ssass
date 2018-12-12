@@ -6623,7 +6623,8 @@ h4 {
 
 .container .content {
   margin: 0;
-  padding: 10px; }
+  padding: 10px;
+  color: white; }
   .container .content a {
     text-decoration: underline;
     color: white;
@@ -6679,6 +6680,8 @@ h4 {
     background-color: #417505;
     border: none;
     color: white; }
+  .container .nav-tabs .active {
+    background-color: #41aa05; }
 
 .container .day {
   flex: 1 1 20%; }
