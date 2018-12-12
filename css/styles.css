@@ -6371,7 +6371,8 @@ h4 {
 .bkgd, #overview, #courses, #professors, #eisenbm, #sharmaa, #tremblk3, .schedule {
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  height: 100vh; }
 
 #overview {
   background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/programinfo-image.jpg); }
@@ -6507,13 +6508,13 @@ h4 {
   background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/course-image.jpg); }
 
 #eisenbm {
-  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/eisenbm-background.jpg); }
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/eisenbm-background-2.jpg); }
 
 #sharmaa {
   background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/sharmaa-background.jpg); }
 
 #tremblk3 {
-  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/tremblk3-background.jpg); }
+  background-image: linear-gradient(#4175056b, #4175056b), url(..//..//img/tremblk3-background-2.jpg); }
 
 #professorList {
   width: 100%;

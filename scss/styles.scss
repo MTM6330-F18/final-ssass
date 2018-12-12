@@ -274,7 +274,7 @@ h4 {
 #eisenbm {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(..//..//img/eisenbm-background.jpg);
+    url(..//..//img/eisenbm-background-2.jpg);
 }
 
 #sharmaa {
@@ -286,7 +286,7 @@ h4 {
 #tremblk3 {
   @extend .bkgd;
   background-image: linear-gradient(#4175056b, #4175056b),
-    url(..//..//img/tremblk3-background.jpg);
+    url(..//..//img/tremblk3-background-2.jpg);
 }
 
 #professorList {
@@ -301,7 +301,7 @@ h4 {
   @media (min-width: $tabletBreakpoint) {
     margin: 0;
   }
-  
+
   li {
     width: 100%;
     text-align: left;
