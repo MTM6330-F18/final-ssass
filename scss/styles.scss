@@ -1,9 +1,11 @@
+$primary: rgba(65, 117, 5, 1);
+$secondary: rgba(0, 21, 0, 0.6);
+
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 // Sass Varibles
 $green: rgba(65, 117, 5, 1);
-$primary: rgba(65, 117, 5, 1);
-$secondary: rgba(0, 21, 0, 0.6);
+
 $transGreen: rgba(104, 194, 0, 0.3);
 $white: white;
 $light: rgba(248, 249, 250, 0.5);
