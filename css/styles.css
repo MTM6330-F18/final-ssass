@@ -6433,6 +6433,9 @@ h4 {
     font-weight: 900; }
   .container .w-49 {
     width: 49%; }
+  .container #contact a {
+    color: rgba(248, 249, 250, 0.5);
+    text-decoration: underline; }
 
 #courses,
 .courses {
@@ -6702,4 +6705,4 @@ footer {
   background-color: rgba(0, 21, 0, 0.6);
   text-align: center; }
   footer p {
-    font-size: .7rem; }
+    font-size: 0.7rem !important; }
