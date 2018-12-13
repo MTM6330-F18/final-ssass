@@ -6385,10 +6385,7 @@ h4 {
     background-color: rgba(0, 0, 0, 0.6);
     margin: 10px 0 10px 0; }
   .container ul {
-    color: white;
-    list-style-type: none;
-    padding: 15px;
-    margin: 0; }
+    color: white; }
     .container ul li {
       margin-bottom: 10px; }
       @media (min-width: 1280px) {
@@ -6409,12 +6406,12 @@ h4 {
     border: none;
     padding: 10px;
     margin: 0; }
-  .container .card-body {
+  .container #feesAndExpenses .card-body, .container #applicationAndAdmission .card-body {
     background-color: rgba(0, 0, 0, 0.6); }
   @media (min-width: 1280px) {
-    .container .collapse .card {
+    .container #feesAndExpenses .card, .container #applicationAndAdmission .card {
       margin: 0 auto; } }
-  .container .collapse .card .fas fa-plus:after {
+  .container #feesAndExpenses .card .fas fa-plus:after, .container #applicationAndAdmission .card .fas fa-plus:after {
     content: '\f067';
     display: block;
     position: absolute;
@@ -6423,7 +6420,7 @@ h4 {
     color: #373534;
     font-size: 30px;
     font-weight: 900; }
-  .container .collapse .card .fas fa-minus:after {
+  .container #feesAndExpenses .card .fas fa-minus:after, .container #applicationAndAdmission .card .fas fa-minus:after {
     content: '\f068';
     width: 17px;
     height: 4px;
@@ -6507,7 +6504,8 @@ h4 {
         font-size: 1rem; } }
     #coursesList .course .close {
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      cursor: pointer; }
       @media (min-width: 580px) {
         #coursesList .course .close {
           font-size: 2rem; } }
@@ -6522,9 +6520,9 @@ h4 {
       cursor: default; }
       #coursesList .course div a {
         list-style-type: none;
-        color: black;
-        cursor: pointer;
-        font-weight: 900; }
+        text-decoration: underline;
+        color: rgba(248, 249, 250, 0.5);
+        cursor: pointer; }
         #coursesList .course div a:hover {
           color: white; }
       #coursesList .course div p {
@@ -6601,7 +6599,8 @@ h4 {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 1rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  list-style-type: none; }
   @media (min-width: 580px) {
     #professorList {
       margin: 0; } }
@@ -6618,22 +6617,24 @@ h4 {
     #professorList li a {
       text-decoration: underline;
       color: white;
-      cursor: pointer;
-      font-weight: bold; }
+      cursor: pointer; }
 
 .container .content {
   margin: 0;
+  margin-bottom: 1rem;
   padding: 10px;
-  color: white; }
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5); }
+  .container .content p {
+    color: black; }
   .container .content a {
     text-decoration: underline;
-    color: white;
-    cursor: pointer;
-    font-weight: bold; }
+    color: rgba(0, 21, 0, 0.6);
+    cursor: pointer; }
   .container .content .bar {
     font-weight: 900; }
   .container .content ul {
-    padding: 0; }
+    color: black; }
 
 .photo {
   width: 100%; }
@@ -6693,7 +6694,7 @@ h4 {
     .container .day .slot a,
     .container .day .dayOfWeek a {
       text-decoration: underline;
-      color: white;
+      color: rgba(248, 249, 250, 0.5);
       cursor: pointer;
       font-weight: bold; }
 
