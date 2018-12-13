@@ -573,8 +573,13 @@ h4 {
     }
   }
 }
+
 // footer styles
 footer {
   background-color: rgba(0, 21, 0, 0.6);
   text-align: center;
+  p {
+    font-size: .7rem;
+  }
 }
+

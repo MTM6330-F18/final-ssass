@@ -6700,3 +6700,5 @@ h4 {
 footer {
   background-color: rgba(0, 21, 0, 0.6);
   text-align: center; }
+  footer p {
+    font-size: .7rem; }
